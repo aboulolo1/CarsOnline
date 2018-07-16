@@ -10,6 +10,10 @@ import UIKit
  import ESPullToRefresh
 
 class CarsOnlineVC: UIViewController {
+    @IBOutlet weak var gridBtn: UIButton!
+    @IBOutlet weak var sortBtn: UIButton!
+    @IBOutlet weak var titleView: UILabel!
+    @IBOutlet weak var filterBtn: UIButton!
     fileprivate var cars:[Car] = []
     @IBOutlet weak var activityIndicator: UIActivityIndicatorView!
     var carsOnlinePresenter:CarsOnlinePresenter?
@@ -17,6 +21,11 @@ class CarsOnlineVC: UIViewController {
     @IBOutlet weak var carsOnlineTB: UITableView!
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.titleView.text = NSLocalizedString("title", comment: "")
+        self.gridBtn.setTitle(NSLocalizedString("gridView", comment: ""), for: UIControlState.normal)
+        self.sortBtn.setTitle(NSLocalizedString("sort", comment: ""), for: UIControlState.normal)
+        self.filterBtn.setTitle(NSLocalizedString("filter", comment: ""), for: UIControlState.normal)
+
         self.activityIndicator.startAnimating()
         carsOnlinePresenter = CarsOnlinePresenter(delegate: self)
         self.carsOnlineTB.isHidden = true

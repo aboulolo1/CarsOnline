@@ -9,6 +9,9 @@
 import UIKit
 import SDWebImage
 class CarsOnlineTableViewCell: UITableViewCell {
+    @IBOutlet weak var timeLeftTitle: UILabel!
+    @IBOutlet weak var bidsTitle: UILabel!
+    @IBOutlet weak var lotTitle: UILabel!
     @IBOutlet weak var bids: UILabel!
     @IBOutlet weak var imgCar: UIImageView!
     
@@ -22,6 +25,10 @@ class CarsOnlineTableViewCell: UITableViewCell {
         // Initialization code
     }
     func updateView(car:Car) {
+        self.timeLeftTitle.text = NSLocalizedString("timeLeft", comment: "")
+        self.bidsTitle.text = NSLocalizedString("bids", comment: "")
+        self.lotTitle.text = NSLocalizedString("lot", comment: "")
+
         self.bids.text = "\(car.auctionInfo.bids ?? 0)"
         self.imgCar.sd_setImage(with: URL(string: car.imgUrl), completed: nil)
         self.lot.text = "\(car.auctionInfo.lot ?? 0)"

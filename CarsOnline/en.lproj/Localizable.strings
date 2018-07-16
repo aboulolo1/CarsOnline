@@ -1,0 +1,14 @@
+/* 
+  Localizable.strings
+  CarsOnline
+
+  Created by Alaa on 7/16/18.
+  Copyright © 2018 Alaa. All rights reserved.
+*/
+"title" = "Car & Machinary";
+"gridView" = "Grid View";
+"sort" = "Sort";
+"filter" = "Filter";
+"timeLeft" = "Time Left";
+"bids" = "Bids";
+"lot" = "Lot#";

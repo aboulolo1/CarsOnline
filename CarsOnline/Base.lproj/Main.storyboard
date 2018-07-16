@@ -64,6 +64,18 @@
                                                 </state>
                                             </button>
                                         </subviews>
+                                        <constraints>
+                                            <constraint firstItem="Ik7-vc-wvo" firstAttribute="leading" secondItem="MPi-Nv-fjk" secondAttribute="trailing" id="5DX-on-2Eg"/>
+                                            <constraint firstAttribute="bottom" secondItem="Dfw-d4-NH5" secondAttribute="bottom" id="72D-XD-bWZ"/>
+                                            <constraint firstAttribute="trailing" secondItem="Dfw-d4-NH5" secondAttribute="trailing" id="GLv-ql-RvP"/>
+                                            <constraint firstItem="Dfw-d4-NH5" firstAttribute="top" secondItem="Q9r-Gw-Vxb" secondAttribute="top" id="HX7-oH-ITh"/>
+                                            <constraint firstItem="Dfw-d4-NH5" firstAttribute="leading" secondItem="Ik7-vc-wvo" secondAttribute="trailing" id="L2K-80-FTe"/>
+                                            <constraint firstItem="MPi-Nv-fjk" firstAttribute="leading" secondItem="Q9r-Gw-Vxb" secondAttribute="leading" id="Pur-Q4-WwZ"/>
+                                            <constraint firstItem="Ik7-vc-wvo" firstAttribute="top" secondItem="Q9r-Gw-Vxb" secondAttribute="top" id="XTG-ON-udh"/>
+                                            <constraint firstAttribute="bottom" secondItem="Ik7-vc-wvo" secondAttribute="bottom" id="icn-EY-1Wh"/>
+                                            <constraint firstItem="MPi-Nv-fjk" firstAttribute="top" secondItem="Q9r-Gw-Vxb" secondAttribute="top" id="v61-ob-6Q1"/>
+                                            <constraint firstAttribute="bottom" secondItem="MPi-Nv-fjk" secondAttribute="bottom" id="yoe-z2-V3X"/>
+                                        </constraints>
                                     </stackView>
                                 </subviews>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -248,12 +260,15 @@
                                         <color key="backgroundColor" red="0.93725490570000003" green="0.93725490570000003" blue="0.95686274770000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <connections>
                                             <outlet property="bids" destination="Cfp-Nq-QPp" id="AW6-hB-qHE"/>
+                                            <outlet property="bidsTitle" destination="oew-0U-iWr" id="CPm-AB-irV"/>
                                             <outlet property="carName" destination="Lgn-YP-7S7" id="F2x-wy-lMb"/>
                                             <outlet property="currency" destination="Lb9-Dg-6HI" id="NMk-Qg-qzL"/>
                                             <outlet property="imgCar" destination="9EP-0x-lX4" id="hym-m9-SXj"/>
                                             <outlet property="lot" destination="i3c-YK-87T" id="7dB-sQ-OjJ"/>
+                                            <outlet property="lotTitle" destination="vav-wN-92c" id="IiZ-ME-fRo"/>
                                             <outlet property="priceCar" destination="QGt-jO-xiA" id="3IT-V6-8Fe"/>
                                             <outlet property="timeLeft" destination="Fl2-Ol-duN" id="eFL-T2-6Nf"/>
+                                            <outlet property="timeLeftTitle" destination="K1D-n4-GnJ" id="NeM-ew-uvb"/>
                                         </connections>
                                     </tableViewCell>
                                 </prototypes>
@@ -284,11 +299,15 @@
                     <connections>
                         <outlet property="activityIndicator" destination="5PJ-Tg-fei" id="ZG4-Xb-LSl"/>
                         <outlet property="carsOnlineTB" destination="Pwm-dV-4lP" id="5ou-Hs-Wvx"/>
+                        <outlet property="filterBtn" destination="MPi-Nv-fjk" id="iT9-a9-ck3"/>
+                        <outlet property="gridBtn" destination="Dfw-d4-NH5" id="3uA-rB-4De"/>
+                        <outlet property="sortBtn" destination="Ik7-vc-wvo" id="PeZ-14-RTJ"/>
+                        <outlet property="titleView" destination="rcq-3I-Dya" id="ldc-18-Iam"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="476" y="133.5832083958021"/>
+            <point key="canvasLocation" x="170" y="96"/>
         </scene>
     </scenes>
 </document>
